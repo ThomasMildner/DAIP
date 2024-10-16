@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MUM 2024 Designing AI Personalities">
+    <meta name="Thomas Mildner">
+    <title>REACT Workshop '24 Bremen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"
+            integrity="sha512-bHeT+z+n8rh9CKrSrbyfbINxu7gsBmSHlDCb3gUF1BjmjDzKhoKspyB71k0CIRBSjE5IVQiMMVBgCWjF60qsvA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div id="home-wrapper">
+        <div id="home-navigation">
+<!--            <span class="burger">-->
+<!--                <button class="burger-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">-->
+<!--                    <svg width="4vh" height="4vh" viewBox="0 0 100 100">-->
+<!--                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />-->
+<!--                        <path class="line line2" d="M 20,50 H 80" />-->
+<!--                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />-->
+<!--                    </svg>-->
+<!--                </button>-->
+<!--            </span>-->
+
+            <div id="nav-list">
+                <h1 id="nav-title">REACT '24 Workshop</h1>
+            </div>
+
+        </div>
+        <div id="home-title">
+            <h2>A workshop on Designing AI Personalities: Enhancing Human-Agent Interaction Through Thoughtful Persona Design.
+            </h2>
+        </div>
+
+
+        <div id="home-info">
+            <span id="home-info-wrapper">
+                <div id="home-info-left">
+                    <h2>About the Workshop</h2>
+                    <p>
+                        In the rapidly evolving field of artificial intelligence (AI) agents, designing the agent's characteristics is crucial for shaping user experience. This workshop aims to establish a research community focused on AI agent persona design for various contexts, such as in-car assistants, educational tools, and smart home environments. We will explore critical aspects of persona design, such as voice, embodiment, and demographics, and their impact on user satisfaction and engagement. Through discussions and hands-on activities, we aim to propose practices and standards that enhance the ecological validity of agent personas. Topics include the design of conversational interfaces, the influence of agent personas on user experience, and approaches for creating contextually appropriate AI agents. This workshop will provide a platform for building a community dedicated to developing AI agent personas that better fit diverse, everyday interactions.
+
+                    </p>
+
+                    <p>
+                        
+
+                    </p>
+
+                    <br>
+
+                    <h2>Schedule</h2>
+
+                    <div class="calendar">
+
+                    <div class="timeline">
+                        <div class="spacer"></div>
+                        <div class="time-marker">8 AM</div>
+                        <div class="time-marker">9 AM</div>
+                        <div class="time-marker">10 AM</div>
+                        <div class="time-marker">11 AM</div>
+                        <div class="time-marker">12 PM</div>
+                        <div class="time-marker">1 PM</div>
+                        <div class="time-marker">2 PM</div>
+                        <div class="time-marker">3 PM</div>
+                        <div class="time-marker">4 PM</div>
+                        <div class="time-marker">5 PM</div>
+                        <div class="time-marker">6 PM</div>
+                  </div>
+                  <div class="days">
+                    <div class="day mon">
+                      <div class="date">
+                        <p class="date-day">Nov</p>
+                        <p class="date-num">4th</p>
+                      </div>
+                      <div class="events">
+                           <div class="event start-9 end-10 cell-background">
+                                  <p class="title">Welcome</p>
+                            </div>
+                            <div class="event start-10 end-12 cell-background">
+                                  <p class="title">Session 1</p>
+                                  <p class="time">10 AM - 12 AM</p>
+                            </div>
+                            <div class="event start-12 end-13 lunch-background">
+                              <p class="title">Lunch 🍕</p>
+                            </div>
+                            <div class="event start-13 end-15 cell-background">
+                                  <p class="title">Session 2</p>
+                                  <p class="time">1 PM - 3 PM</p>
+                            </div>
+                           <div class="event start-15 end-16 lunch-background">
+                                  <p class="title">Break ☕</p>
+                            </div>
+                            <div class="event start-16 end-17 cell-background">
+                                  <p class="title">Session 3</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="day tues">
+                      <div class="date">
+                        <p class="date-day">Nov</p>
+                        <p class="date-num">5th</p>
+                      </div>
+                      <div class="events">
+
+                            <div class="event start-9 end-12 cell-background">
+                                  <p class="title">Session 4</p>
+                                  <p class="time">9 AM - 12 AM</p>
+                            </div>
+                            <div class="event start-12 end-13 lunch-background">
+                              <p class="title">Lunch 🍕</p>
+                            </div>
+                            <div class="event start-13 end-15 cell-background">
+                                  <p class="title">Session 5</p>
+                                  <p class="time">1 PM - 3 PM</p>
+                            </div>
+                           <div class="event start-15 end-16 lunch-background">
+                                  <p class="title">Break ☕</p>
+                            </div>
+                            <div class="event start-16 end-17 cell-background">
+                                  <p class="title">Session 6</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="day wed">
+                      <div class="date">
+                        <p class="date-day">Nov</p>
+                        <p class="date-num">6th</p>
+                      </div>
+                      <div class="events">
+                          <div class="event start-9 end-11 cell-background">
+                                  <p class="title">Session 4</p>
+                                  <p class="time">9 AM - 12 AM</p>
+                            </div>
+                            <div class="event start-11 end-12 cell-background">
+                                  <p class="title">End</p>
+                            </div>
+                            <div class="event start-12 end-13 lunch-background">
+                              <p class="title">Lunch 🍕</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div id="home-info-right">
+                    <h2>Topics</h2>
+                    <ul>
+                        <li>Responsible Embedding of LLMs in CUIs</li>
+                        <li>Ethical caveats in CUIs and HRI</li>
+                    </ul>
+
+                    <br>
+                    <hr>
+                    <br>
+
+<!--                    <h2>Key dates</h2>-->
+<!--                    <p><b>Submission due</b> <br> 2nd of June, 2023 AoE</p>-->
+<!--                    <p><b>Notification sent</b><br>14th of June, 2023 AoE</p>-->
+<!--                    <p><b>Workshop date</b><br>19th of July, 1:00 pm - 5:00 pm (UTC+2)</p>-->
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <span id="organisers-wrapper">
+        <div class="content-title">
+            <h4>Organisers</h4>
+        </div>
+        <div class="content-text">
+            <p> We are excited about the organisation committee of this workshop with expertise in diverse fields. Together,
+                the organisers have a history in a variety of topics including human-robot interaction, natural language
+                processing, conversational user interfaces, dark patterns, multi-modal communication, as well as pervasive and
+                persuasive technologies. Below, we would like to introduce each co-organisator individually.
+            </p>
+
+            <br><hr><br>
+
+             <div class="organiser-content">
+                    <p class="organiser-description">
+                        <b>Nima Zargham</b> is a postdoctoral researcher in the Digital Media Lab at the University of Bremen. His research focuses on human-centered approaches for designing speech-based systems that elicit desirable user experiences. Nima has previously organized CUI-related workshops at notable conferences such as ACM/IEEE HRI 2023, ACM CUI 2023, ACM CUI 2024, and ACM CHI 24. Additionally, he served as a local chair at the ACM CHI-PLAY 2022 conference. His research efforts have resulted in publications featured in prestigious HCI venues, including CHI, CUI, and CHI-PLAY.
+                    </p>
+                    <img class="organiser-portrait" src="img/zargham.jpg">
+                </div>
+
+                 <div class="organiser-content">
+                    <p class="organiser-description">
+                        <b>Mateusz Dubielm</b> is a research associate in the Department of Computer Science at the University of Luxembourg, where he works on developing and evaluating conversational agents. Specifically, his current research focuses on assessing the cognitive and usability implications of interfaces that feature speech and exploring their potential to inspire positive behavioral change in users. He served as Short Papers Chair for CUI '22 and was one of the General Chairs for CUI '24.
+                    </p>
+                    <img class="organiser-portrait" src="img/zargham.jpg">
+                </div>
+
+                <div class="organiser-content">
+                    <p class="organiser-description">
+                        <b>Smit Desai</b> is a postdoctoral researcher in the College of Art, Media and Design at the Northeastern University, Boston. His primary research focus centers around comprehending the mental models of users as they engage with conversational agents, utilizing innovative research techniques such as metaphor analysis. He leverages this valuable insight to advance the development of conversational agents in diverse social roles, including educators and storytellers. His research has yielded publications in esteemed HCI forums like CHI, TOCHI, CSCW, and CUI.
+                    </p>
+                    <img class="organiser-portrait" src="img/zargham.jpg">
+                </div>
+
+                <div class="organiser-content">
+                    <img class="organiser-portrait" src="img/mildner.jpg">
+                    <p class="organiser-description">
+                        <b>Thomas Mildner</b>  a postdoctoral researcher at the Digital Media Lab at the University of Bremen. His research focuses on ethical and responsible design and online wellbeing with studies exploring so-called dark patterns in social media as well as conversational technologies. To this end, Thomas collaborated to develop an ontology for dark patterns. His research is published in venues including CHI, DIS, and CUI.
+                    </p>
+                </div>
+
+               <div class="organiser-content">
+                    <img class="organiser-portrait" src="img/mildner.jpg">
+                    <p class="organiser-description">
+                        <b>Hans-Joachim Belz</b>  is a freelance user researcher and designer with over 30 years of experience designing, implementing, and managing digital products across various industries. From 2014 to 2024, he held a teaching position in ``Mobile Commerce'' at DHBW Mannheim (Baden-Wuerttemberg Cooperative State University). In 2020, his focus shifted to voice automation. In addition to his consultancy work in conversational AI, he employs Ethnomethodology and Conversation Analysis (EMCA) to study the expanding conversational capabilities of voice and multimodal user interfaces.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </span>
+    <div id="footer">
+      
+    </div>
+
+<!--    <script type="text/javascript" src="js/burger-menu.js"></script>-->
+
+</body>
+</html>
