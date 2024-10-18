@@ -1,11 +1,13 @@
 html{
-    height: 100%;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
 }
 body{
     height: 100%;
     width: 100vw;
     font-family: Poppins;
-    overflow-x: hidden;
+    overflow: hidden;
     background: #282f46;
 }
 
@@ -26,6 +28,23 @@ h1{
     font-size: 2.8em;
     line-height: 1.2;
 }
+.coverfig{
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.full-width-image{
+    max-width: 60%;
+    max-height: 60%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+}
+
+
 
 h2 {
     font-family: Poppins;
@@ -209,9 +228,7 @@ p,ul, h1, h2, h3, h4 {
 #home-wrapper {
     width: 100vw;
     display: grid;
-    grid-template-rows: 12vh 30vh auto 2fr;
-    min-height: 100vh;
-    padding-bottom: 10vh;
+    min-height: auto;
     background-color: #282f46;
 }
 
@@ -227,6 +244,29 @@ p,ul, h1, h2, h3, h4 {
     max-height: 35vh;
     padding-top: 4vh;
     background-size: cover;
+}
+.home-title2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/back.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:40px 0;
+}
+
+#title23 {
+    max-width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #c5c5c5;
 }
 
 #home-title {
@@ -296,7 +336,6 @@ p,ul, h1, h2, h3, h4 {
 
 #home-info-wrapper {
     display: grid;
-    grid-template-columns: 5fr 2fr;
     grid-gap: 5vw;
     width: 70vw;
     height: 100%;
@@ -646,7 +685,12 @@ p,ul, h1, h2, h3, h4 {
     object-fit: cover;
     border-radius: 20px;
 }
-
+.organiser-portrait2 {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
 .organiser-description{
 }
